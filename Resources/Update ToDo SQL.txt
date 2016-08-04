@@ -1,0 +1,14 @@
+31/05/2016
+# Alter tabel konsinyasi
+  + total_pembayaran int(11)
+  + is_lunas int(1)
+# 
+
+06/08/2015
+- Alter kolom database : tabel penjualan
+  > jumlah_item_refund : int
+
+05/08/2015
+- Alter kolom database : tabel penjualan_detail
+  > jumlah : int
+  > jumlah_refund : int

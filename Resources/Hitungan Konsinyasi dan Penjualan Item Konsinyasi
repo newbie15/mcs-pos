@@ -1,0 +1,26 @@
+Hitungan Konsinyasi dan Penjualan Item Konsinyasi
+
+-- Item Konsinyasi
+   1 Dus = 5 Botol
+
+
+> Konsi 1 Masuk : 1 Dus, Keluar : 0
+
+> Konsi 2 Masuk : 12 Botol, Keluar : 0
+
+-- Stok 17 Botol = 3.4 botol
+
+
+# Penjualan 1 : 13 Botol
+  - Jumlah jual dalam satuan dasar = jumlah jual x konversi jual
+  - Jumlah Jual = 13 x 1 = 13
+
+  - Maks Keluar Konsi 1 = jumlah konsi x konversi konsi
+  - Maks keluar konsi 1 = 1 x 5 = 5
+
+  # Loop 1
+  Jumlah Jual > Maks Keluar Konsi 1
+  - Konsi 1 Keluar = Konsi 1 Masuk  (tanpa konversi)
+  - Konsi 1 Keluar = 1
+  - Sisa Keluar  = Jumlah Jual - (Konsi 1 keluar x konversi konsi)
+  - Siswa keluar = 13 - (1 x 5) = 

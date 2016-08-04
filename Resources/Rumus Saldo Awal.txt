@@ -1,0 +1,23 @@
+Saldo Awal = tanggal 01 pada awal bulan periode
+
+Saldo Awal per bulan = tanggal 01 pada awal bulan
+Digenerate dari penjumlahan Barang masuk dan barang keluar pada bulan sebelumnya
+- Stok Opname
+- Kartu Stok
+
+Kasus :
+BULAN JULI
+- Periode Awal Program	= 01 Juli 2015
+- Saldo Awal Item 00001	= 20
+- Penjualan 00001 	= -5
+- Pembelian 00001	= +10
+
+BULAN AGUSTUS
+- Periode Awal Bulan	= 01 Agustus 2015
+- Saldo Awal Item 00001 = 25	> penjumlahan saldo awal,penjualan,pembelian,penyesuian stok bulan sebelumnya
+- Rusak 00001		= -3    > rusak tidak terekam dalam program, maka:
+- Stok Opname		= 22  (-3)  > set manual stok, nilai (-3) disimpan secara hidden dalam stok opname
+
+BULAN SEPTEMBER
+- Periode Awal Bulan	= 01 September 2015
+- Saldo Awal Item	= 22

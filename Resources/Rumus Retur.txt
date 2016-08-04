@@ -1,0 +1,25 @@
+RUMUS RETUR
+
+ASLI
+A	10 @ 500	 5.000  -> jumlah = 10, harga_jual = 500, sub_total = 5000
+B	5 @ 2000	10.000  -> jumlah = 5, harga_jual = 2000, sub_total = 10000
+C	10 @ 1000	10.000  -> jumlah = 10, harga_jual = 1000, sub_total = 10000
+----------------------
+Total Biaya		25.000	-> total_biaya = 25.000, total_biaya_akhir = 25.000 (tdk ada potongan / baya lain)
+
+
+RETUR Case
+- Barang A cacat satu biji, dikembalikan tanpa potongan
+- Barang B cacata 2 biji, dikembalikan dgn potongan
+
+Subtotal Refund = (jumlah * harga_jual) - (jumlah_refund * harga_refund)
+Potongan Refund Item = (harga_refund - harga_jual) * jumlah_refund
+
+A	1 @ 500		  500	-> jumlah_refund = 1, harga_refund = 500, sub_total = 4500, potongan retur = 0
+B   2 @ 1500	3.000	-> jumlah_refund = 2, harga_refund = 1500, sub_total = 7000, potongan retur = 1000
+----------------------
+Total Refund	3.500	-> total_biaya_refund
+
+---> TRANSAKSI AWAL
+total_biaya_akhir = total_biaya + biaya_lain - biaya_potongan - total_biaya_refund
+---> DETAIL TRANSAKSI PENJUALAN

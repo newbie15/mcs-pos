@@ -1,0 +1,16 @@
+[DEPARTEMEN]
+[DEPARTEMEN_ALAMAT]
+[DEPARTEMEN_KOTA]               Apoteker : 
+[DEPARTEMEN_TELP]    Tuti Nuriyani,S.Farm,Apt
+021-63851718
+087785463888
+
+No.   : [KODE_TRX]
+Kasir : [KASIR]
+----------------------------------------
+[[ITEM]]
+----------------------------------------
+[[TOTAL]]
+
+Barang yang sudah dibeli tidak dapat dikembalikan kecuali ada perjanjian
+dengan membawa struk.

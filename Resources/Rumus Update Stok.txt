@@ -1,0 +1,6 @@
+- Penjualan
+  stok = stok - (jumlah * konversi)
+
+- Penjualan Refund
+  stok = stok - (jumlah_refund_lama * konversi)
+  stok = stok + (jumlah_refund_baru * konversi)

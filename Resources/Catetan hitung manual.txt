@@ -1,0 +1,23 @@
+select a.artikelcode, artikelname,
+  (select sum(jtrans*qty1) from kartustock k where k.artikelcode = a.artikelcode) as qty1,
+  (select sum(jtrans*qty2) from kartustock k where k.artikelcode = a.artikelcode) as qty2
+from tbartikel a
+where artikelname like '%BES%';
+
+                 qty1            qty2
+01309 -- Stok    1                 0    content 10
+      -- hitung  11              -100    
+      -- sql     (11*10)+(-100)  set 0           --> benar
+
+01311 -- stok     0    	           2    content  3      
+      -- hitung   7              -20
+      -- sql      (7*3)+(-20)      1   --> salah
+
+01313 -- stok    2                 0    content 3
+      -- hitung  1                 3
+      -- sql     1+(3/3)        set 0  ---> benar
+
+mucos -- STOK   0                  8     content 10
+                 3                -22
+      -- SQL    (3*10)+(-22)       8   --> benar
+
